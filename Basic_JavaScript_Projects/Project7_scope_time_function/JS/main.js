@@ -50,10 +50,10 @@ function Height_Function() { //if else statement
 function Time_function() { // time function
     var Time = new Date().getHours();
     var Reply;
-    if (Time < 12 == Time > 0) {
+    if (Time < 12 && Time > 0) {
         Reply = "It is morning time!";
     }
-    else if (Time > 12 == Time < 18) {
+    else if (Time > 12 && Time < 18) {
         Reply = "It is the afternoon.";
     }
     else {
