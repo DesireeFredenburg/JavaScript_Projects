@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+    <script>
+        //targeting document(entire HTML page) checking if its ready
+        //the preforming a function on it 
+        $(document).ready(function() {
+            //targeting HTML going to append it
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //changing paragraph 2 to red
+            $("#2").css({"color":"red"});
+            //using the click method and hide effect
+            $("#3").click(function() {
+                $('h1').hide();
+            });
+            // using the fade out effect
+            $("#1").fadeOut("slow");
+            // using the .click() method to display in console log
+            $("p").click(function() {
+                console.log("You clicked a paragraph!");
+            });
+
+        });
+    </script>
+
+</html>
