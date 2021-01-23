@@ -1,2 +1,2 @@
 # JavaScript_Projects
- JavaScript Projects for learning purposes. 
+These are some small projects I made using JavaScript.
